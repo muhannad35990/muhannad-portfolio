@@ -1,6 +1,6 @@
 import  styled  from "styled-components";
 import React from "react";
-import university from "../images/University_of_Aleppo_Logo.jpg";
+import university from "../images/University_of_Aleppo_Logo.png";
 function EducationCard({ degree, year, desc }) {
   return (
     <StyledCard>
@@ -28,11 +28,13 @@ height: 25rem;
 width: 18rem;
 margin: 0rem 2rem;
 background-color: #fff;
-box-shadow: 2 4rem 6rem rgba($color: #000000, $alpha: 0.9);
+box-shadow: 2rem 4rem 6rem rgba($color: #000000, $alpha: 0.2);
 border: 1px solid #ccc;
 border-radius: 20px;
+transition: all .2s ease;
 &:hover{
-    box-shadow: 0 3rem 6rem rgba($color: #000000, $alpha: 0.9);
+    box-shadow: 4rem 3rem 6rem rgba($color: #000000, $alpha: 0.2);
+    background-color: #f5f5f5;
 }
 `
 const CardContent=styled.div`
