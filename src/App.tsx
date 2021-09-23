@@ -5,6 +5,7 @@ import Experiance from './components/Experiance';
 import GlobalStyle from './components/GlobalStyle';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <Header/>
      <Education/>
      <Experiance/>
+     <Skills/>
     </div>
   );
 }

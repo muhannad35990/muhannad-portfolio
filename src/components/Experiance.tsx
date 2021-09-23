@@ -18,8 +18,6 @@ import { StayPrimaryLandscapeRounded } from '@material-ui/icons';
   >
     <h3 className="vertical-timeline-element-title" style={{color:'#23d997'}}>Front-End web Developer</h3>
     <p style={{ margin:'0 0 1rem 0'}}> <a href="www.salvimar.de"  >  SALVIMAR Gmbh,Germany </a></p>
-   
- 
     <div>
         <p style={{color:'#333',margin:0}}>&#x25cf; Frontend web developer using React.js.</p>
         <p style={{color:'#333',margin:0}}>&#x25cf; Convert designs / wireframes into responsive reusable components.</p>
@@ -41,7 +39,7 @@ application.</p>
   >
     <h3 className="vertical-timeline-element-title" style={{color:'#23d997'}}>Freelancer</h3>
     
-    <p>
+    <p style={{color:'#333'}}>
      A React.js developer freelancer
     </p>
   </VerticalTimelineElement>
