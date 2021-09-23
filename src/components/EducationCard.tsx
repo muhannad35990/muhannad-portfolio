@@ -1,7 +1,13 @@
 import  styled  from "styled-components";
 import React from "react";
 import university from "../images/University_of_Aleppo_Logo.png";
-function EducationCard({ degree, year, desc }) {
+
+interface Iprops{
+    degree:string
+    year:number
+    desc:string
+}
+const EducationCard:React.FC<Iprops>=({ degree, year, desc })=> {
   return (
     <StyledCard>
       <div>
@@ -40,7 +46,6 @@ transition: all .2s ease;
 const CardContent=styled.div`
 padding: 0 1rem;
 margin-top: 1rem;
- 
 `
 const StyledYear=styled.div`
 margin-bottom:1rem;
