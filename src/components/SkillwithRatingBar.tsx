@@ -9,10 +9,8 @@ interface skills{
 }
 const SkillwithRatingBar:React.FC<skills> = ({name,rate,img}) => {
     return (
-        <Skill>
-            <img src={img} alt="logo" style={{width:'35px',height:'30px'}}/>
-      
-   
+      <Skill>
+      <img src={img} alt="logo" style={{width:'35px',height:'30px'}}/>
       <Box sx={{ width: '100%',ml:2, mr: 4}}>
       <h4 style={{margin:'0 1rem 0 1rem',color:'#777'}}>{name}</h4>    
       
