@@ -1,4 +1,5 @@
 import {
+    Copyright,
   Facebook,
   FaceOutlined,
   GitHub,
@@ -24,7 +25,7 @@ const Footer = () => {
         <Instagram style={{ fontSize: "2rem" }} />
         <Twitter style={{ fontSize: "2rem" }} />
       </IconsSection>
-      <Styledfootercontent>All rights reserved  ®</Styledfootercontent>
+      <Styledfootercontent><Copyright style={{marginRight:'.5rem'}}/>All rights reserved  </Styledfootercontent>
     </Styledfooter>
   );
 };
@@ -51,6 +52,9 @@ const Styledfootercontent = styled.div`
   bottom:  6vh;
   z-index: 2;
   color: white;
+  display:flex;
+  justify-content: center;
+  align-content: center;
 `;
 const StyledA=styled.a`
 text-decoration:none;
