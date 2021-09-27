@@ -34,6 +34,7 @@ const Styledfooter = styled.div`
   height: 50vh;
   width: 100vw;
   position: relative;
+  bottom:0;
   background-image: url(${wave});
   background-repeat: no-repeat;
   background-size: cover;

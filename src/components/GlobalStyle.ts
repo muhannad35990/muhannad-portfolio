@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     background: #eee;
     font-family: 'Inter', sans-serif;
+    
 }
 button{
     font-weight: bold;
@@ -49,7 +50,7 @@ p{
     color:#ccc;
     font-size: 1rem;
 }
- 
+
 `;
 
 export default GlobalStyle;
