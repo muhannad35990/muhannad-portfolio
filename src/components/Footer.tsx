@@ -24,23 +24,23 @@ const Footer = () => {
         <Instagram style={{ fontSize: "2rem" }} />
         <Twitter style={{ fontSize: "2rem" }} />
       </IconsSection>
-      <Styledfootercontent>All rights reserved</Styledfootercontent>
+      <Styledfootercontent>All rights reserved  ®</Styledfootercontent>
     </Styledfooter>
   );
 };
 
 const Styledfooter = styled.div`
   height: 50vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-image: url(${wave});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 `;
 const IconsSection = styled.div`
   position: absolute;
-  bottom: 4rem;
-  right: 1rem;
+  bottom: 6vh;
+  right: 4rem;
   z-index: 2;
   color: white;
   font-size: 2rem;
@@ -48,7 +48,7 @@ const IconsSection = styled.div`
 const Styledfootercontent = styled.div`
   position: absolute;
   right: 45vw;
-  bottom: 4rem;
+  bottom:  6vh;
   z-index: 2;
   color: white;
 `;
