@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Rating from '@mui/material/Rating';
+import { LinearProgress, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/system';
 interface skills{
     name:string
     rate:number
@@ -9,16 +10,26 @@ interface skills{
 const SkillwithRatingBar:React.FC<skills> = ({name,rate,img}) => {
     return (
         <Skill>
-            <img src={img} alt="logo" style={{width:'50px'}}/>
-       <h4 style={{margin:'0 1rem 0 1rem'}}>{name}</h4>    
-      <Rating name="read-only" value={rate} readOnly />
+            <img src={img} alt="logo" style={{width:'35px',height:'30px'}}/>
+      
+   
+      <Box sx={{ width: '100%',ml:2, mr: 4}}>
+      <h4 style={{margin:'0 1rem 0 1rem',color:'#777'}}>{name}</h4>    
+      
+        <LinearProgress variant="determinate"  color="warning" value={rate}/>
+        <span >{`${Math.round(
+          rate,
+        )}%`}</span>
+        
+      </Box>
+      
         </Skill>
     )
 }
 const Skill=styled.div`
 display: flex;
 justify-content: center;
-align-items: center;
+ 
 margin:1rem 0
 
 `

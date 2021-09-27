@@ -11,7 +11,7 @@ import formikImg from "../images/skills/formik.png";
 import gitImg from "../images/skills/git.png";
 import javascriptImg from "../images/skills/javascript.png";
 import jiraImg from "../images/skills/jira.png";
-import mongoImg from "../images/skills/mongo.svg";
+import mongoImg from "../images/skills/mongo.png";
 import nodeImg from "../images/skills/node.png";
 import oauthImg from "../images/skills/oauth.png";
 import reduxsagaImg from "../images/skills/redux-saga.png";
@@ -29,78 +29,83 @@ const Skills = () => {
   return (
     <StyledSkills>
       <h1>Skills</h1>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="HTML5" rate={5} img={htmlimg} />
+      <div  style={{margin :"0 3rem"}}>
+      <Grid container >
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="HTML5" rate={99} img={htmlimg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="CSS3" rate={5} img={cssimg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="CSS3" rate={99} img={cssimg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="SASS" rate={5} img={sassImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="SASS" rate={99} img={sassImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Bootstrap" rate={4.5} img={bootstrapImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Bootstrap" rate={95} img={bootstrapImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Tailwind" rate={4.5} img={tailwindImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Tailwind" rate={95} img={tailwindImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Material-ui" rate={5} img={materialuiImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Material-ui" rate={99} img={materialuiImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Ant design" rate={5} img={antImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Ant design" rate={99} img={antImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="TypeScript" rate={5} img={typescriptImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="JAVASCRIPT" rate={99} img={javascriptImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="React.js" rate={5} img={reactImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="TypeScript" rate={99} img={typescriptImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Redux" rate={5} img={reduxImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="React.js" rate={99} img={reactImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="redux-saga" rate={5} img={reduxsagaImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Redux" rate={99} img={reduxImg} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="redux-saga" rate={99} img={reduxsagaImg} />
+        </Grid>
+        <Grid item xs={2}>
           <SkillwithRatingBar
             name=" Styled components"
-            rate={5}
+            rate={99}
             img={styledComponentsImg}
           />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name=" Formik,Yup" rate={5} img={formikImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name=" Formik,Yup" rate={99} img={formikImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name=" Node.js" rate={4} img={nodeImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name=" Node.js" rate={80} img={nodeImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="MongoDB" rate={4.5} img={mongoImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="MongoDB" rate={90} img={mongoImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="SQL" rate={5} img={sqlImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="SQL" rate={90} img={sqlImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Git,GitHub" rate={5} img={gitImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Git,GitHub" rate={99} img={gitImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Agile, JIRA" rate={5} img={jiraImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Agile, JIRA" rate={99} img={jiraImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Firebase" rate={3} img={firebaseImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Firebase" rate={70} img={firebaseImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Docker" rate={3} img={dockerImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Docker" rate={70} img={dockerImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Oauth" rate={4.5} img={oauthImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Oauth" rate={80} img={oauthImg} />
         </Grid>
-        <Grid item xs={4}>
-          <SkillwithRatingBar name="Stripe" rate={4} img={stripeImg} />
+        <Grid item xs={2}>
+          <SkillwithRatingBar name="Stripe" rate={70} img={stripeImg} />
         </Grid>
       </Grid>
+      </div>
     </StyledSkills>
   );
 };
