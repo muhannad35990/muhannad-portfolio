@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { useParams } from "react-router-dom";
 import { ProjectsData } from "../components/ProjectsData";
 import * as images from "../components/ImagesImports";
+
 const ProjectDetails = () => {
   const routeParams = useParams();
 
@@ -22,7 +23,7 @@ const ProjectDetails = () => {
             <img
               src={img}
               alt=""
-              style={{ height: "80vh", width: "100%", objectFit: "cover" }}
+              style={{ height: "80vh", width: "100%", objectFit: "contain" }}
             />
           </div>
         ))}

@@ -33,40 +33,71 @@ import whatsappImg from "../images/covers/whatsapp.jpg";
 import chatImg from "../images/covers/chat.png";
 import videochatImg from "../images/covers/videoChat.jpg";
 import muhannadImg from "../images/covers/muhannad.jpg";
- import NtoursImg1 from '../images/Ntours/Ntour1.jpeg'
+import NtoursImg1 from "../images/Ntours/Ntour1.jpeg";
+import Ntour1 from "../images/Ntours/1.jpg";
+import Ntour2 from "../images/Ntours/2.jpg";
+import Ntour3 from "../images/Ntours/3.jpg";
+import Ntour4 from "../images/Ntours/4.jpg";
+import Ntour5 from "../images/Ntours/5.jpg";
+import Ntour6 from "../images/Ntours/6.jpg";
+import Ntour7 from "../images/Ntours/7.jpg";
+import Ntour8 from "../images/Ntours/8.jpg";
+import Ntour9 from "../images/Ntours/9.jpg";
+import Ntour10 from "../images/Ntours/10.jpg";
+import Ntour11 from "../images/Ntours/11.jpg";
+import Ntour12 from "../images/Ntours/12.jpg";
+import Ntour13 from "../images/Ntours/13.jpg";
+import Ntour14 from "../images/Ntours/14.jpg";
 
-export{ htmlimg ,
- reactImg ,
- cssimg ,
- sassImg ,
- bootstrapImg ,
- dockerImg ,
- firebaseImg ,
- formikImg ,
- gitImg ,
- javascriptImg ,
- jiraImg ,
- mongoImg ,
- nodeImg ,
- oauthImg ,
- reduxsagaImg ,
- reduxImg ,
- sqlImg ,
- stripeImg ,
- styledComponentsImg ,
- typescriptImg ,
- antImg ,
- materialuiImg ,
- tailwindImg ,
- restImg ,
- expressImg ,
- socketImg ,
- NaturalFrontImg ,
- NaturalBackImg ,
- realEstateImg ,
- touristsImg ,
- hotelsImg ,
- whatsappImg ,
- chatImg ,
- videochatImg ,
- muhannadImg,NtoursImg1 }
+export {
+  htmlimg,
+  reactImg,
+  cssimg,
+  sassImg,
+  bootstrapImg,
+  dockerImg,
+  firebaseImg,
+  formikImg,
+  gitImg,
+  javascriptImg,
+  jiraImg,
+  mongoImg,
+  nodeImg,
+  oauthImg,
+  reduxsagaImg,
+  reduxImg,
+  sqlImg,
+  stripeImg,
+  styledComponentsImg,
+  typescriptImg,
+  antImg,
+  materialuiImg,
+  tailwindImg,
+  restImg,
+  expressImg,
+  socketImg,
+  NaturalFrontImg,
+  NaturalBackImg,
+  realEstateImg,
+  touristsImg,
+  hotelsImg,
+  whatsappImg,
+  chatImg,
+  videochatImg,
+  muhannadImg,
+  NtoursImg1,
+  Ntour1,
+  Ntour2,
+  Ntour3,
+  Ntour4,
+  Ntour5,
+  Ntour6,
+  Ntour7,
+  Ntour8,
+  Ntour9,
+  Ntour10,
+  Ntour11,
+  Ntour12,
+  Ntour13,
+  Ntour14,
+};
