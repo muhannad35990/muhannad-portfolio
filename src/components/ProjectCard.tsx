@@ -2,7 +2,7 @@ import styled  from 'styled-components'
 import React, {  FC, useState } from 'react'
 import { Divider, Grid } from '@material-ui/core';
 import ReactImg from '../images/skills/react.png'
-enum ProjectType{FrontEnd="FrontEnd",Backend="Backend"};
+enum ProjectType{FrontEnd="FrontEnd",Backend="Backend",FullStack="FullStack"};
 interface Iprops{
 image:string
 title:string
@@ -10,7 +10,6 @@ desc:string
 type:ProjectType
 tools:string[]
 icons:string[]
-
 }
 const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
     const StyledCardPicture=styled.div`
@@ -46,8 +45,11 @@ const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
             })}
           </Grid>      
           </ToolsContainer>
+          
           <Divider/>
           <StyledButton>Details</StyledButton>
+          
+      
         
 
         </ProjectCardcontainer>
@@ -55,7 +57,7 @@ const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
 }
 
 const ProjectCardcontainer=styled.div`
-width: 100%;
+width: 20rem;
  height: 32rem;
 background-color: #fff;
 position: relative;
@@ -64,18 +66,20 @@ box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
 border-radius:4px;
  
 `
+ 
 const StyledButton=styled.button`
 border:none;
 outline:none;
 padding:.5rem;
-background-color: #23d997;
+font-weight: lighter;
+background-color: #0a6d4a;
 color:white;
 text-align: center;
 margin: 1rem;
 &:hover{
 background-color: white;
-border: 1px solid #23d997;
-color:#23d997
+border: 1px solid #0a6d4a;
+color:#0a6d4a
 }
 `
  const ToolsContainer=styled.div`
@@ -92,8 +96,8 @@ const StledProjectCardTitle=styled.h4`
     text-align: right; 
     position: absolute;
     top: 10rem;
-    right: 2rem;
-    width: 70%;
+    right: 1rem;
+    width: 60%;
    span{
       padding: .3rem 1rem;
       box-decoration-break: clone;

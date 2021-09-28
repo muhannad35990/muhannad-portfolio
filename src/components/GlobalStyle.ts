@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     background: #eee;
     font-family: 'Inter', sans-serif;
-    
+    overflow-x: hidden;
 }
 button{
     font-weight: bold;
