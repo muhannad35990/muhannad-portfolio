@@ -1,9 +1,11 @@
 import styled  from 'styled-components'
 import React, {  FC, useState } from 'react'
+import {Link} from 'react-router-dom'
 import { Divider, Grid } from '@material-ui/core';
 import ReactImg from '../images/skills/react.png'
 enum ProjectType{FrontEnd="FrontEnd",Backend="Backend",FullStack="FullStack"};
 interface Iprops{
+  id:number
 image:string
 title:string
 desc:string 
@@ -11,7 +13,7 @@ type:ProjectType
 tools:string[]
 icons:string[]
 }
-const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
+const ProjectCard:FC<Iprops> = ({id,image,title,desc,type,tools,icons}) => {
     const StyledCardPicture=styled.div`
     background-image: linear-gradient(to right bottom,
                   #064730,
@@ -30,6 +32,7 @@ const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
           {title}
           </span>
         </StledProjectCardTitle>
+        <StyledCardContent>
         <ProjectDetails>
           <h5> {type} </h5>
           <p>{desc}</p> 
@@ -44,14 +47,10 @@ const ProjectCard:FC<Iprops> = ({image,title,desc,type,tools,icons}) => {
               </Grid>
             })}
           </Grid>      
-          </ToolsContainer>
-          
+          </ToolsContainer>   
+          </StyledCardContent>      
           <Divider/>
-          <StyledButton>Details</StyledButton>
-          
-      
-        
-
+          <StyledButton><Link to={`/projects/${id}`}>Details</Link></StyledButton>
         </ProjectCardcontainer>
     )
 }
@@ -67,7 +66,9 @@ border-radius:4px;
  
 `
  
-const StyledButton=styled.button`
+const StyledButton=styled.div`
+margin:1rem;
+a{
 border:none;
 outline:none;
 padding:.5rem;
@@ -75,16 +76,20 @@ font-weight: lighter;
 background-color: #0a6d4a;
 color:white;
 text-align: center;
-margin: 1rem;
+text-decoration: none;
+
 &:hover{
 background-color: white;
 border: 1px solid #0a6d4a;
-color:#0a6d4a
+color:#0a6d4a;
+cursor: pointer; 
+
+}
 }
 `
  const ToolsContainer=styled.div`
 text-align: center;
- margin:1.5rem;
+ margin:1rem .5rem;
  p{
    font-size: .8rem;
  }
@@ -109,10 +114,13 @@ const StledProjectCardTitle=styled.h4`
         );
     }
 `;
+const StyledCardContent=styled.div`
+height: 11rem;
+ 
+`;
 const ProjectDetails=styled.div`
 display:flex;
 flex-direction: column;
-justify-content: center;
 margin:1rem;
 h5{
   font-size: 1.5rem;

@@ -4,10 +4,11 @@ import GlobalStyle from './components/GlobalStyle';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import Main from './components/Main';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Main from './Pages/Main';
+import Contact from './Pages/Contact';
+import Projects from './Pages/Projects';
 import  styled  from 'styled-components';
+import ProjectDetails from './Pages/ProjectDetails';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
                 </Route>
                 <Route exact path="/projects">
                   <Projects/>
+                </Route>
+                <Route exact path="/projects/:id">
+                  <ProjectDetails/>
                 </Route>
                 <Route path="/">
                 <Main/>
