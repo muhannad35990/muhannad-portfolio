@@ -1,0 +1,11 @@
+.slick-prev {
+  left: 3rem !important;
+  z-index: 2;
+}
+.slick-next {
+  right: 3rem !important;
+  z-index: 2;
+}
+.slick-dots li.slick-active button:before {
+  color: #fe8800 !important;
+}

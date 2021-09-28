@@ -33,7 +33,7 @@ import whatsappImg from "../images/covers/whatsapp.jpg";
 import chatImg from "../images/covers/chat.png";
 import videochatImg from "../images/covers/videoChat.jpg";
 import muhannadImg from "../images/covers/muhannad.jpg";
- 
+ import NtoursImg1 from '../images/Ntours/Ntour1.jpeg'
 
 export{ htmlimg ,
  reactImg ,
@@ -69,4 +69,4 @@ export{ htmlimg ,
  whatsappImg ,
  chatImg ,
  videochatImg ,
- muhannadImg }
+ muhannadImg,NtoursImg1 }
