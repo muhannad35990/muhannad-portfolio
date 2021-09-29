@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import background from "../images/laptop.jpg";
 import profileImage from "../images/profile.png";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <StyledHeader>
@@ -22,7 +23,9 @@ function Header() {
           <p>I'm professional with amazing skills</p>
         </StyledDesciption>
 
-        <ButtonPrimary>Contanct me</ButtonPrimary>
+        <ButtonPrimary>
+          <Link to="/contact">Contanct me</Link>
+        </ButtonPrimary>
         <ButtonSecondary>Download cv</ButtonSecondary>
       </StyledHeaderContent>
       <StyledImage />
@@ -77,7 +80,10 @@ const StyledDesciption = styled.div`
 const ButtonPrimary = styled.button`
   background-color: #23d997;
   color: white;
-
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &:hover {
     border: 2px solid #23d997;
     background: transparent;

@@ -51,14 +51,16 @@ const ProjectCard: FC<Iprops> = ({
           <Grid container spacing={2}>
             {tools.map((tool, index) => {
               return (
-                <Grid item xs={3}>
-                  <img
-                    src={icons[index]}
-                    alt="logo"
-                    style={{ width: "25px", height: "20px" }}
-                  />
-                  <p>{tool}</p>
-                </Grid>
+                index < 4 && (
+                  <Grid item xs={3}>
+                    <img
+                      src={icons[index]}
+                      alt="logo"
+                      style={{ width: "25px", height: "20px" }}
+                    />
+                    <p>{tool}</p>
+                  </Grid>
+                )
               );
             })}
           </Grid>

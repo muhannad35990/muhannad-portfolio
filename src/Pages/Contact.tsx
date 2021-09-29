@@ -10,25 +10,26 @@ const Contact = () => {
         <Grid container spacing={5}>
           <Grid item xs={3}>
             <StyledContactItem>
-              <Email style={{marginRight:'1rem',color:"#23d997"}}/> E-Mail:
+              <Email style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+              E-Mail:
             </StyledContactItem>
           </Grid>
           <Grid item xs={9}>
-              <StyledDetail>Muhannad35990@gmail.com</StyledDetail>
-            
+            <StyledDetail>Muhannad35990@gmail.com</StyledDetail>
           </Grid>
           <Grid item xs={3}>
             <StyledContactItem>
-             
-              <Phone style={{marginRight:'1rem',color:"#23d997"}}/> Telephone:
+              <Phone style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+              Telephone:
             </StyledContactItem>
           </Grid>
           <Grid item xs={9}>
-           <StyledDetail> +963-965442437</StyledDetail>
+            <StyledDetail> +963-965442437</StyledDetail>
           </Grid>
           <Grid item xs={3}>
             <StyledContactItem>
-              <GitHub style={{marginRight:'1rem',color:"#23d997"}}/> Github:
+              <GitHub style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+              Github:
             </StyledContactItem>
           </Grid>
           <Grid item xs={9}>
@@ -38,12 +39,12 @@ const Contact = () => {
           </Grid>
           <Grid item xs={3}>
             <StyledContactItem>
-              <LinkedIn style={{marginRight:'1rem',color:"#23d997"}}/> LinkedIn:
+              <LinkedIn style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+              LinkedIn:
             </StyledContactItem>
           </Grid>
           <Grid item xs={9}>
             <a href=" https://www.linkedin.com/in/muhannad-hammada35990">
-           
               https://www.linkedin.com/in/muhannad-hammada35990
             </a>
           </Grid>
@@ -69,12 +70,11 @@ const ContactCard = styled.div`
 const StyledContactItem = styled.div`
   display: flex;
   align-items: center;
-  color:#FE8800;
-  font-weight: bolder;
-  
+  color: #23d997;
+  font-weight: 700;
 `;
-const StyledDetail=styled.h3`
-color:#777;
-font-size:1.2rem;
-`
+const StyledDetail = styled.h3`
+  color: #777;
+  font-size: 1.2rem;
+`;
 export default Contact;

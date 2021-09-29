@@ -24,17 +24,20 @@ const ProjectDetails = () => {
           </div>
         ))}
       </Slider>
-      <FeaturesSection>
+      <StyledSection>
         <h1>Features</h1>
         {projectsData[routeParams.id].features.map((feature) => (
           <StyledFeature>{feature}</StyledFeature>
         ))}
-      </FeaturesSection>
+      </StyledSection>
+      <StyledSection>
+      <h1>Tools</h1>
+      </StyledSection>
     </ProjectDetailsContainer>
   );
 };
 
-const FeaturesSection = styled.section`
+const StyledSection = styled.section`
   margin-top: 2rem;
   text-align: center;
   display: flex;

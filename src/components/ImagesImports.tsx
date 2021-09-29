@@ -24,6 +24,14 @@ import tailwindImg from "../images/skills/tailwind.png";
 import restImg from "../images/skills/rest.png";
 import expressImg from "../images/skills/express.svg";
 import socketImg from "../images/skills/socket.svg";
+import axiosImg from "../images/skills/axios.png";
+import noLogoImg from "../images/skills/noLogo.png";
+import i18nextImg from "../images/skills/i18next.png";
+import mapboxImg from "../images/skills/mapbox.png";
+import passportImg from "../images/skills/passport.png";
+import chartImg from "../images/skills/chart.svg";
+import eslintImg from "../images/skills/eslint.png";
+
 import NaturalFrontImg from "../images/covers/naturalFront.jpeg";
 import NaturalBackImg from "../images/covers/naturalBack.jpeg";
 import realEstateImg from "../images/covers/realEstate.jpeg";
@@ -34,6 +42,7 @@ import chatImg from "../images/covers/chat.png";
 import videochatImg from "../images/covers/videoChat.jpg";
 import muhannadImg from "../images/covers/muhannad.jpg";
 import NtoursImg1 from "../images/Ntours/Ntour1.jpeg";
+
 import Ntour1 from "../images/Ntours/1.jpg";
 import Ntour2 from "../images/Ntours/2.jpg";
 import Ntour3 from "../images/Ntours/3.jpg";
@@ -76,6 +85,13 @@ export {
   restImg,
   expressImg,
   socketImg,
+  axiosImg,
+  noLogoImg,
+  i18nextImg,
+  mapboxImg,
+  passportImg,
+  chartImg,
+  eslintImg,
   NaturalFrontImg,
   NaturalBackImg,
   realEstateImg,
