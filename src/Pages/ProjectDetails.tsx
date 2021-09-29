@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { useParams } from "react-router-dom";
-import { ProjectsData } from "../components/ProjectsData";
+import { projectsData } from "../components/ProjectsData";
 import * as images from "../components/ImagesImports";
 
 const ProjectDetails = () => {
@@ -18,23 +18,49 @@ const ProjectDetails = () => {
   return (
     <ProjectDetailsContainer>
       <Slider {...settings}>
-        {ProjectsData[routeParams.id].images.map((img) => (
+        {projectsData[routeParams.id].images.map((img) => (
           <div>
-            <img
-              src={img}
-              alt=""
-              style={{ height: "80vh", width: "100%", objectFit: "contain" }}
-            />
+            <StyledSliderImage src={img} />
           </div>
         ))}
       </Slider>
+      <FeaturesSection>
+        <h1>Features</h1>
+        {projectsData[routeParams.id].features.map((feature) => (
+          <StyledFeature>{feature}</StyledFeature>
+        ))}
+      </FeaturesSection>
     </ProjectDetailsContainer>
   );
 };
 
+const FeaturesSection = styled.section`
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const StyledFeature = styled.h3`
+  padding: 1rem;
+  border: 1px solid #23d997;
+  color: #777;
+  width: 60%;
+  margin: 0.5rem;
+  border-radius: 5px;
+  &:hover {
+    background-color: #23d997;
+    color: #fff;
+    cursor: pointer;
+  }
+`;
 const ProjectDetailsContainer = styled.div`
   margin: 4rem 0rem;
-
   min-height: 50vh;
+`;
+const StyledSliderImage = styled.img`
+  height: 80vh;
+  width: 100%;
+  object-fit: fill;
 `;
 export default ProjectDetails;

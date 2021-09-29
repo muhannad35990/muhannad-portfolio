@@ -5,7 +5,7 @@ enum ProjectType {
   FullStack = "FullStack",
 }
 
-export const ProjectsData = [
+export const projectsData = [
   {
     id: 0,
     image: images.NaturalFrontImg,
@@ -36,6 +36,14 @@ export const ProjectsData = [
       images.Ntour13,
       images.Ntour14,
     ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
+    ],
   },
   {
     id: 1,
@@ -50,6 +58,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
       images.NtoursImg1,
+    ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
     ],
   },
   {
@@ -71,6 +87,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
     ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
+    ],
   },
   {
     id: 3,
@@ -90,6 +114,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
       images.NtoursImg1,
+    ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
     ],
   },
   {
@@ -111,6 +143,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
     ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
+    ],
   },
   {
     id: 5,
@@ -131,6 +171,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
     ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
+    ],
   },
   {
     id: 6,
@@ -145,6 +193,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
       images.NtoursImg1,
+    ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
     ],
   },
   {
@@ -166,6 +222,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
     ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
+    ],
   },
   {
     id: 8,
@@ -185,6 +249,14 @@ export const ProjectsData = [
       images.NtoursImg1,
       images.NtoursImg1,
       images.NtoursImg1,
+    ],
+    features: [
+      "CRUD on tours, users, bookings, reviews",
+      "Authentication using Jwt web tokens and refresh tokens.",
+      "Change password and reset password using email.",
+      "Uploading images and processing them.",
+      "Credit Card Payments with Stripe.",
+      "Login with facebook and gmail.",
     ],
   },
 ];
