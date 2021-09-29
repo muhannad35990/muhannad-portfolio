@@ -1,5 +1,5 @@
 import {
-    Copyright,
+  Copyright,
   Facebook,
   FaceOutlined,
   GitHub,
@@ -9,7 +9,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import wave from "../images/wave.svg";
+import wave from "../images/general/wave.svg";
 const Footer = () => {
   return (
     <Styledfooter>
@@ -25,7 +25,10 @@ const Footer = () => {
         <Instagram style={{ fontSize: "2rem" }} />
         <Twitter style={{ fontSize: "2rem" }} />
       </IconsSection>
-      <Styledfootercontent><Copyright style={{marginRight:'.5rem'}}/>All rights reserved  </Styledfootercontent>
+      <Styledfootercontent>
+        <Copyright style={{ marginRight: ".5rem" }} />
+        All rights reserved{" "}
+      </Styledfootercontent>
     </Styledfooter>
   );
 };
@@ -34,7 +37,7 @@ const Styledfooter = styled.div`
   height: 50vh;
   width: 100vw;
   position: relative;
-  bottom:0;
+  bottom: 0;
   background-image: url(${wave});
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,14 +53,15 @@ const IconsSection = styled.div`
 const Styledfootercontent = styled.div`
   position: absolute;
   right: 45vw;
-  bottom:  6vh;
+  bottom: 6vh;
   z-index: 2;
   color: white;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-content: center;
 `;
-const StyledA=styled.a`
-text-decoration:none;
-color: white;`
+const StyledA = styled.a`
+  text-decoration: none;
+  color: white;
+`;
 export default Footer;

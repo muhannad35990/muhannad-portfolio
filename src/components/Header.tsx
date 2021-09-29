@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import background from "../images/laptop.jpg";
-import profileImage from "../images/profile.png";
+import background from "../images/general/laptop.jpg";
+import profileImage from "../images/general/profile.png";
 import { Link } from "react-router-dom";
 function Header() {
   return (

@@ -82,6 +82,11 @@ const ProjectCardcontainer = styled.div`
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
   border-radius: 4px;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 const StyledButton = styled.div`
@@ -95,7 +100,7 @@ const StyledButton = styled.div`
     color: white;
     text-align: center;
     text-decoration: none;
-
+    transition: all 0.2s ease;
     &:hover {
       background-color: white;
       border: 1px solid #0a6d4a;

@@ -1,3 +1,4 @@
+import React from "react";
 import htmlimg from "../images/skills/html.png";
 import reactImg from "../images/skills/react.png";
 import cssimg from "../images/skills/css.png";
@@ -31,6 +32,7 @@ import mapboxImg from "../images/skills/mapbox.png";
 import passportImg from "../images/skills/passport.png";
 import chartImg from "../images/skills/chart.svg";
 import eslintImg from "../images/skills/eslint.png";
+import githubImg from "../images/skills/github.png";
 
 import NaturalFrontImg from "../images/covers/naturalFront.jpeg";
 import NaturalBackImg from "../images/covers/naturalBack.jpeg";
@@ -92,6 +94,7 @@ export {
   passportImg,
   chartImg,
   eslintImg,
+  githubImg,
   NaturalFrontImg,
   NaturalBackImg,
   realEstateImg,

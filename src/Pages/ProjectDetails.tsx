@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import { useParams } from "react-router-dom";
 import { projectsData } from "../components/ProjectsData";
 import * as images from "../components/ImagesImports";
+import { Divider, Grid } from "@material-ui/core";
+import { Box } from "@material-ui/system";
 
 const ProjectDetails = () => {
   const routeParams = useParams();
@@ -25,13 +27,93 @@ const ProjectDetails = () => {
         ))}
       </Slider>
       <StyledSection>
-        <h1>Features</h1>
+        <Divider
+          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+        >
+          <h1>Features</h1>
+        </Divider>
         {projectsData[routeParams.id].features.map((feature) => (
           <StyledFeature>{feature}</StyledFeature>
         ))}
       </StyledSection>
+      <StyledSection style={{ backgroundColor: "#fff" }}>
+        <Divider
+          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+        >
+          <h1> Tools</h1>
+        </Divider>
+        <Grid
+          container
+          spacing={4}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "2rem 5rem",
+          }}
+        >
+          {projectsData[routeParams.id].tools.map((tool, index) => (
+            <Grid item xs={2}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  src={projectsData[routeParams.id].icons[index]}
+                  alt="logo"
+                  style={{ width: "35px", height: "30px" }}
+                />
+
+                <h4 style={{ marginLeft: "1rem", color: "#777" }}>{tool}</h4>
+              </div>
+            </Grid>
+          ))}
+        </Grid>
+      </StyledSection>
+      {projectsData[routeParams.id].youtube && (
+        <StyledSection>
+          <Divider
+            style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+          >
+            <h1> Demo Video</h1>
+          </Divider>
+
+          <iframe
+            style={{ width: "800px", height: "500px" }}
+            src={projectsData[routeParams.id].youtube}
+            allow="autoplay; encrypted-media"
+            title={projectsData[routeParams.id].title}
+            allowFullScreen
+          />
+        </StyledSection>
+      )}
       <StyledSection>
-      <h1>Tools</h1>
+        <Divider
+          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+        >
+          <h1>Links</h1>
+        </Divider>
+        <div style={{ display: "flex" }}>
+          <StyledSourceLink href={projectsData[routeParams.id].source}>
+            <img
+              src={images.githubImg}
+              alt="logo"
+              style={{ width: "9rem", height: "5rem", marginBottom: "1rem" }}
+            />
+            <h5>Source code</h5>
+          </StyledSourceLink>
+          {projectsData[routeParams.id].demo && (
+            <StyledSourceLink href={projectsData[routeParams.id].demo}>
+              <img
+                src={projectsData[routeParams.id].image}
+                alt="logo"
+                style={{ width: "9rem", height: "5rem", marginBottom: "1rem" }}
+              />
+              <h5>Live Demo</h5>
+            </StyledSourceLink>
+          )}
+        </div>
       </StyledSection>
     </ProjectDetailsContainer>
   );
@@ -48,6 +130,7 @@ const StyledFeature = styled.h3`
   padding: 1rem;
   border: 1px solid #23d997;
   color: #777;
+
   width: 60%;
   margin: 0.5rem;
   border-radius: 5px;
@@ -65,5 +148,30 @@ const StyledSliderImage = styled.img`
   height: 80vh;
   width: 100%;
   object-fit: fill;
+`;
+const StyledSourceLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+
+  text-decoration: none;
+  color: #23d997;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  h5 {
+    color: #fe8800;
+    font-family: cursive;
+  }
 `;
 export default ProjectDetails;

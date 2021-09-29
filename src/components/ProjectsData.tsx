@@ -71,6 +71,9 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    youtube: "https://www.youtube.com/embed/4VrSu75fmSE",
+    demo: "https://natural-tours.netlify.app/",
+    source: "https://github.com/muhannad35990/NatureTours-React.JS",
   },
   {
     id: 1,
@@ -94,6 +97,7 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/NatureToursAPI",
   },
   {
     id: 2,
@@ -122,6 +126,8 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/real-estate ",
+    demo: "https://competent-knuth-1aab9a.netlify.app/",
   },
   {
     id: 3,
@@ -150,6 +156,8 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/TouristSite",
+    demo: "https://silly-jones-4fbb74.netlify.app/",
   },
   {
     id: 4,
@@ -178,6 +186,8 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/hotelsBook",
+    demo: "https://gallant-heisenberg-00eac7.netlify.app/",
   },
   {
     id: 5,
@@ -206,6 +216,8 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/whatsapp-webClone",
+    demo: "https://whatsappweb-clone-6b5b8.web.app/",
   },
   {
     id: 6,
@@ -229,6 +241,8 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/video-audio-chat-nodejs",
+    demo: "https://meeting-video-chat.herokuapp.com/",
   },
   {
     id: 7,
@@ -257,6 +271,7 @@ export const projectsData = [
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
     ],
+    source: "https://github.com/muhannad35990/Messenger_FullStack",
   },
   {
     id: 8,
@@ -285,5 +300,6 @@ export const projectsData = [
       "Credit Card Payments with Stripe",
       "Login with facebook and gmail",
     ],
+    source: "https://github.com/muhannad35990/muhannad-portfolio",
   },
 ];
