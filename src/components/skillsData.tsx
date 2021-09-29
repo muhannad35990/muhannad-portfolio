@@ -34,4 +34,7 @@ export const skillsData = [
   { name: "Socket.io", rate: 90, img: images.socketImg },
   { name: "Axios", rate: 99, img: images.axiosImg },
   { name: "Eslint", rate: 99, img: images.eslintImg },
+  { name: "JWT", rate: 90, img: images.jwtImg },
+  { name: "heroku", rate: 99, img: images.herokuImg },
+  { name: "Webhooks", rate: 90, img: images.webhooksImg },
 ];

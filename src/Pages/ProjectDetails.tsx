@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { projectsData } from "../components/ProjectsData";
 import * as images from "../components/ImagesImports";
 import { Divider, Grid } from "@material-ui/core";
-import { Box } from "@material-ui/system";
+import { Box, width } from "@material-ui/system";
 
 const ProjectDetails = () => {
   const routeParams = useParams();
@@ -56,16 +56,17 @@ const ProjectDetails = () => {
               <div
                 style={{
                   display: "flex",
+                  flexDirection: "column",
                   alignItems: "center",
                 }}
               >
                 <img
                   src={projectsData[routeParams.id].icons[index]}
                   alt="logo"
-                  style={{ width: "35px", height: "30px" }}
+                  style={{ width: "50px", height: "40px" }}
                 />
 
-                <h4 style={{ marginLeft: "1rem", color: "#777" }}>{tool}</h4>
+                <h4 style={{ marginTop: ".5rem", color: "#777" }}>{tool}</h4>
               </div>
             </Grid>
           ))}
@@ -130,10 +131,11 @@ const StyledFeature = styled.h3`
   padding: 1rem;
   border: 1px solid #23d997;
   color: #777;
-
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   width: 60%;
   margin: 0.5rem;
   border-radius: 5px;
+  transition: all 0.3s ease;
   &:hover {
     background-color: #23d997;
     color: #fff;
@@ -160,17 +162,15 @@ const StyledSourceLink = styled.a`
   margin: 1rem;
   border: 1px solid #ccc;
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease;
-
   text-decoration: none;
   color: #23d997;
-
+  transition: all 0.2s ease;
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
   h5 {
-    color: #fe8800;
+    color: #777;
     font-family: cursive;
   }
 `;

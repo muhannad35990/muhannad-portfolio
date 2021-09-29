@@ -33,6 +33,9 @@ import passportImg from "../images/skills/passport.png";
 import chartImg from "../images/skills/chart.svg";
 import eslintImg from "../images/skills/eslint.png";
 import githubImg from "../images/skills/github.png";
+import jwtImg from "../images/skills/jwt.png";
+import herokuImg from "../images/skills/heroku.png";
+import webhooksImg from "../images/skills/webhooks.svg";
 
 import NaturalFrontImg from "../images/covers/naturalFront.jpeg";
 import NaturalBackImg from "../images/covers/naturalBack.jpeg";
@@ -59,6 +62,29 @@ import Ntour11 from "../images/Ntours/11.jpg";
 import Ntour12 from "../images/Ntours/12.jpg";
 import Ntour13 from "../images/Ntours/13.jpg";
 import Ntour14 from "../images/Ntours/14.jpg";
+
+import Rstate1 from "../images/realState/1.jpg";
+import Rstate2 from "../images/realState/2.jpg";
+import Rstate3 from "../images/realState/3.jpg";
+import Rstate4 from "../images/realState/4.jpg";
+import Rstate5 from "../images/realState/5.jpg";
+import Rstate6 from "../images/realState/6.jpg";
+
+import Toursit1 from "../images/tourists/1.jpg";
+import Toursit2 from "../images/tourists/2.jpg";
+import Toursit3 from "../images/tourists/3.jpg";
+import Toursit4 from "../images/tourists/4.jpg";
+import Toursit5 from "../images/tourists/5.jpg";
+import Toursit6 from "../images/tourists/6.jpg";
+import Toursit7 from "../images/tourists/7.jpg";
+import Toursit8 from "../images/tourists/8.jpg";
+
+import Hotel1 from "../images/hotels/1.jpg";
+import Hotel2 from "../images/hotels/2.jpg";
+import Hotel3 from "../images/hotels/3.jpg";
+
+import Whatsapp1 from "../images/whatsapp/1.jpg";
+import Whatsapp2 from "../images/whatsapp/2.jpg";
 
 export {
   htmlimg,
@@ -95,6 +121,9 @@ export {
   chartImg,
   eslintImg,
   githubImg,
+  jwtImg,
+  herokuImg,
+  webhooksImg,
   NaturalFrontImg,
   NaturalBackImg,
   realEstateImg,
@@ -119,4 +148,23 @@ export {
   Ntour12,
   Ntour13,
   Ntour14,
+  Rstate1,
+  Rstate2,
+  Rstate3,
+  Rstate4,
+  Rstate5,
+  Rstate6,
+  Toursit1,
+  Toursit2,
+  Toursit3,
+  Toursit4,
+  Toursit5,
+  Toursit6,
+  Toursit7,
+  Toursit8,
+  Hotel1,
+  Hotel2,
+  Hotel3,
+  Whatsapp1,
+  Whatsapp2,
 };
