@@ -5,6 +5,8 @@ import { Grid } from "@material-ui/core";
 import project1 from "../images/general/laptop.jpg";
 import { projectsData } from "../Data/ProjectsData";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 const theme = createMuiTheme({
   breakpoints: {
     values: {
@@ -18,7 +20,12 @@ const theme = createMuiTheme({
 });
 const Projects = () => {
   return (
-    <StyledProjectsContainer>
+    <StyledProjectsContainer
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <ThemeProvider theme={theme}>
         <Grid container spacing={5}>
           {projectsData.map((project) => {
@@ -41,7 +48,7 @@ const Projects = () => {
     </StyledProjectsContainer>
   );
 };
-const StyledProjectsContainer = styled.div`
+const StyledProjectsContainer = styled(motion.div)`
   margin: 10rem 3rem;
   display: flex;
   justify-content: center;

@@ -6,6 +6,8 @@ import { projectsData } from "../Data/ProjectsData";
 import * as images from "../components/ImagesImports";
 import { Divider, Grid } from "@material-ui/core";
 import { Box, width } from "@material-ui/system";
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion";
 
 const ProjectDetails = () => {
   const routeParams = useParams();
@@ -18,7 +20,12 @@ const ProjectDetails = () => {
     slidesToScroll: 1,
   };
   return (
-    <ProjectDetailsContainer>
+    <ProjectDetailsContainer
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <Slider {...settings}>
         {projectsData[routeParams.id].images.map((img) => (
           <div>
@@ -142,7 +149,7 @@ const StyledFeature = styled.h3`
     cursor: pointer;
   }
 `;
-const ProjectDetailsContainer = styled.div`
+const ProjectDetailsContainer = styled(motion.div)`
   margin: 4rem 0rem;
   min-height: 50vh;
 `;

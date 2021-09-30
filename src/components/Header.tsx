@@ -3,24 +3,31 @@ import styled from "styled-components";
 import background from "../images/general/laptop.jpg";
 import profileImage from "../images/general/profile.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { animateFade, animateSlideLeft, animateSlideright } from "../animation";
 function Header() {
   return (
     <StyledHeader>
       <StyledHeaderContent>
-        <Hide>
-          <h2> Hi!</h2>
-        </Hide>
-        <Hide>
-          <h2>
-            I'm <span>Muhannad Hammada</span>
-          </h2>
-        </Hide>
-        <Hide>
-          <h3>Mid-level Web Developer</h3>
-        </Hide>
+        <motion.h2 variants={animateSlideright} initial="hidden" animate="show">
+          Hi!
+        </motion.h2>
+
+        <motion.h2 variants={animateSlideLeft} initial="hidden" animate="show">
+          I'm <span>Muhannad Hammada</span>
+        </motion.h2>
+
+        <motion.h3 variants={animateSlideright} initial="hidden" animate="show">
+          Mid-level Web Developer
+        </motion.h3>
+
         <StyledDesciption>
-          <p>Contact me for if youy need a software developer </p>
-          <p>I'm professional with amazing skills</p>
+          <motion.p variants={animateFade} initial="hidden" animate="show">
+            Contact me for if youy need a software developer{" "}
+          </motion.p>
+          <motion.p variants={animateFade} initial="hidden" animate="show">
+            I'm professional with amazing skills
+          </motion.p>
         </StyledDesciption>
 
         <ButtonPrimary>
@@ -99,7 +106,4 @@ const ButtonSecondary = styled.button`
   }
 `;
 
-const Hide = styled.div`
-  overflow: hidden;
-`;
 export default Header;
