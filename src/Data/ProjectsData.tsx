@@ -1,4 +1,4 @@
-import * as images from "./ImagesImports";
+import * as images from "../components/ImagesImports";
 enum ProjectType {
   FrontEnd = "FrontEnd",
   Backend = "Backend",

@@ -3,7 +3,7 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Grid } from "@material-ui/core";
 import project1 from "../images/general/laptop.jpg";
-import { projectsData } from "../components/ProjectsData";
+import { projectsData } from "../Data/ProjectsData";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   breakpoints: {

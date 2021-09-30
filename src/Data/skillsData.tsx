@@ -1,4 +1,4 @@
-import * as images from "./ImagesImports";
+import * as images from "../components/ImagesImports";
 
 export const skillsData = [
   { name: "HTML5", rate: 99, img: images.htmlimg },

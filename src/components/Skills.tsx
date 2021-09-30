@@ -3,7 +3,7 @@ import { Grid } from "@material-ui/core";
 import styled from "styled-components";
 import * as images from "./ImagesImports";
 import SkillwithRatingBar from "./SkillwithRatingBar";
-import { skillsData } from "./skillsData";
+import { skillsData } from "../Data/skillsData";
 const Skills = () => {
   return (
     <StyledSkills>

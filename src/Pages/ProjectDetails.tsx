@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { useParams } from "react-router-dom";
-import { projectsData } from "../components/ProjectsData";
+import { projectsData } from "../Data/ProjectsData";
 import * as images from "../components/ImagesImports";
 import { Divider, Grid } from "@material-ui/core";
 import { Box, width } from "@material-ui/system";
