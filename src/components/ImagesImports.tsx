@@ -86,6 +86,28 @@ import Hotel3 from "../images/hotels/3.jpg";
 import Whatsapp1 from "../images/whatsapp/1.jpg";
 import Whatsapp2 from "../images/whatsapp/2.jpg";
 
+import Messenger1 from "../images/messenger/1.jpg";
+import Messenger2 from "../images/messenger/2.jpg";
+import Messenger3 from "../images/messenger/3.jpg";
+import Messenger4 from "../images/messenger/4.jpg";
+import Messenger5 from "../images/messenger/5.jpg";
+import Messenger6 from "../images/messenger/6.jpg";
+
+import videochat1 from "../images/videoChat/1.jpg";
+
+import Portfolio1 from "../images/portfolio/1.jpg";
+import Portfolio2 from "../images/portfolio/2.jpg";
+import Portfolio3 from "../images/portfolio/3.jpg";
+import Portfolio4 from "../images/portfolio/4.jpg";
+import Portfolio5 from "../images/portfolio/5.jpg";
+import Portfolio6 from "../images/portfolio/6.jpg";
+import Portfolio7 from "../images/portfolio/7.jpg";
+import Portfolio8 from "../images/portfolio/8.jpg";
+import Portfolio9 from "../images/portfolio/9.jpg";
+import Portfolio10 from "../images/portfolio/10.jpg";
+import Portfolio11 from "../images/portfolio/11.jpg";
+import Portfolio12 from "../images/portfolio/12.jpg";
+
 export {
   htmlimg,
   reactImg,
@@ -167,4 +189,23 @@ export {
   Hotel3,
   Whatsapp1,
   Whatsapp2,
+  Messenger1,
+  Messenger2,
+  Messenger3,
+  Messenger4,
+  Messenger5,
+  Messenger6,
+  videochat1,
+  Portfolio1,
+  Portfolio2,
+  Portfolio3,
+  Portfolio4,
+  Portfolio5,
+  Portfolio6,
+  Portfolio7,
+  Portfolio8,
+  Portfolio9,
+  Portfolio10,
+  Portfolio11,
+  Portfolio12,
 };

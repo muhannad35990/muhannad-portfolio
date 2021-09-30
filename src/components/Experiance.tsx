@@ -30,8 +30,7 @@ function Experiance() {
                 {exp.title}
               </h3>
               <p style={{ margin: "0 0 1rem 0" }}>
-                {" "}
-                <a href="www.salvimar.de">{exp.company}</a>
+                <a href={exp.site}>{exp.company}</a>
               </p>
               <div>
                 {exp.roles.map((role) => (
@@ -43,7 +42,7 @@ function Experiance() {
         })}
 
         <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+          iconStyle={{ background: "#FE8800", color: "#fff" }}
           icon={<StayPrimaryLandscapeRounded />}
         />
       </VerticalTimeline>
