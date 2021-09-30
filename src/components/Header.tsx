@@ -4,7 +4,12 @@ import background from "../images/general/laptop.jpg";
 import profileImage from "../images/general/profile.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { animateFade, animateSlideLeft, animateSlideright } from "../animation";
+import {
+  animateFade,
+  animateSlideLeft,
+  animateSlideright,
+  animateSlideUp,
+} from "../animation";
 function Header() {
   return (
     <StyledHeader>
@@ -30,10 +35,20 @@ function Header() {
           </motion.p>
         </StyledDesciption>
 
-        <ButtonPrimary>
+        <ButtonPrimary
+          variants={animateSlideUp}
+          initial="hidden"
+          animate="show"
+        >
           <Link to="/contact">Contanct me</Link>
         </ButtonPrimary>
-        <ButtonSecondary>Download cv</ButtonSecondary>
+        <ButtonSecondary
+          variants={animateSlideUp}
+          initial="hidden"
+          animate="show"
+        >
+          Download cv
+        </ButtonSecondary>
       </StyledHeaderContent>
       <StyledImage />
     </StyledHeader>
@@ -84,7 +99,7 @@ const StyledDesciption = styled.div`
   margin: 1.5rem 0 2rem 0;
   line-height: 2rem;
 `;
-const ButtonPrimary = styled.button`
+const ButtonPrimary = styled(motion.button)`
   background-color: #23d997;
   color: white;
   a {
@@ -96,7 +111,7 @@ const ButtonPrimary = styled.button`
     background: transparent;
   }
 `;
-const ButtonSecondary = styled.button`
+const ButtonSecondary = styled(motion.button)`
   background: transparent;
   border: 2px solid #23d997;
   margin: 0 1rem;

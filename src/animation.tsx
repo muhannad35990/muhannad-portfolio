@@ -1,6 +1,6 @@
 export const pageAnimation = {
   hidden: {
-    y: 300,
+    y: 400,
     opacity: 0,
   },
   show: {
@@ -12,7 +12,7 @@ export const pageAnimation = {
   },
   exit: {
     opacity: 0,
-    y: 300,
+    y: 400,
   },
 };
 export const animateFade = {
@@ -25,7 +25,7 @@ export const animateSlideDown = {
 };
 export const animateSlideUp = {
   hidden: { y: 50 },
-  show: { y: 0, transition: { duration: 1 } },
+  show: { y: 0 },
 };
 export const animateSlideLeft = {
   hidden: { x: 50 },
