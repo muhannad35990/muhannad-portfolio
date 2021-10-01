@@ -9,6 +9,7 @@ import {
   animateSlideLeft,
   animateSlideright,
   animateSlideUp,
+  animateZoomOut,
 } from "../animation";
 function Header() {
   return (
@@ -50,7 +51,7 @@ function Header() {
           Download cv
         </ButtonSecondary>
       </StyledHeaderContent>
-      <StyledImage />
+      <StyledImage variants={animateZoomOut} initial="hidden" animate="show" />
     </StyledHeader>
   );
 }
@@ -72,9 +73,9 @@ const StyledHeader = styled.div`
   align-items: center;
 `;
 
-const StyledImage = styled.div`
+const StyledImage = styled(motion.div)`
   width: 30rem;
-  height: 100%;
+  height: 90%;
 
   background-image: linear-gradient(
       270deg,

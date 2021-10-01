@@ -35,3 +35,11 @@ export const animateSlideright = {
   hidden: { x: -50 },
   show: { x: 0, transition: { duration: 1 } },
 };
+export const animateZoomOut = {
+  hidden: { scale: 1.2 },
+  show: { scale: 1, transition: { duration: 2 } },
+};
+export const animateWidth = {
+  hidden: { width: 0 },
+  show: { width: "100%", transition: { duration: 0.5 } },
+};
