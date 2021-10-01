@@ -70,6 +70,7 @@ export const projectsData = [
       "Uploading images and processing them.",
       "Credit Card Payments with Stripe.",
       "Login with facebook and gmail.",
+      "Multi language",
     ],
     youtube: "https://www.youtube.com/embed/4VrSu75fmSE",
     demo: "https://natural-tours.netlify.app/",
