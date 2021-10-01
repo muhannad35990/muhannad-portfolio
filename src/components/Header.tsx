@@ -51,7 +51,9 @@ function Header() {
           initial="hidden"
           animate="show"
         >
-          Download cv
+          <a href="./cv/react.js_developer.pdf" download>
+            Download cv
+          </a>
         </ButtonSecondary>
       </StyledHeaderContent>
       <StyledImage variants={animateZoomOut} initial="hidden" animate="show" />
@@ -98,6 +100,7 @@ const StyledHeaderContent = styled.div`
   width: 50vw;
   margin-left: 10vw;
   color: white;
+  z-index: 2;
 `;
 
 const StyledDesciption = styled.div`
@@ -107,6 +110,7 @@ const StyledDesciption = styled.div`
 const ButtonPrimary = styled(motion.button)`
   background-color: #23d997;
   color: white;
+  z-index: 1000;
   a {
     text-decoration: none;
     color: white;
@@ -119,10 +123,18 @@ const ButtonPrimary = styled(motion.button)`
 const ButtonSecondary = styled(motion.button)`
   background: transparent;
   border: 2px solid #23d997;
+  text-decoration: none;
+  padding: 1rem 2rem;
   margin: 0 1rem;
   color: white;
+  z-index: 1000;
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &:hover {
     background: #23d997;
+    cursor: pointer;
   }
 `;
 
