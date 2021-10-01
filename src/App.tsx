@@ -16,36 +16,34 @@ function App() {
   let location = useLocation();
 
   return (
-    <div>
+    <AppContainer>
       <GlobalStyle />
-
-      <AppContainer>
-        <NavBar />
-        <AnimatePresence exitBeforeEnter>
-          <Switch location={location} key={location.key}>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/projects">
-              <Projects />
-            </Route>
-            <Route exact path="/projects/:id">
-              <ProjectDetails />
-            </Route>
-            <Route path="/">
-              <Main />
-            </Route>
-          </Switch>
-        </AnimatePresence>
-        <Footer />
-      </AppContainer>
-    </div>
+      <NavBar />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
+          </Route>
+          <Route exact path="/projects/:id">
+            <ProjectDetails />
+          </Route>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+      <Footer />
+    </AppContainer>
   );
 }
 
 const AppContainer = styled.div`
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 export default App;

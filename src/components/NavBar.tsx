@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
-import { LaptopMac } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
+import logo from "../images/general/logo.png";
 function NavBar() {
   const location = useLocation();
 
   return (
     <Nav>
-      <StyledLogo>
-        <LaptopMac style={{ fontSize: "3rem" }} />
-      </StyledLogo>
+      <StyledLogo src={logo} alt="logo" />
       <StyledUl>
         <Tabcontainer>
           <Link to="/">Main</Link>
@@ -65,10 +63,11 @@ const StyledUl = styled.ul`
     color: white;
   }
 `;
-const StyledLogo = styled.div`
+const StyledLogo = styled.img`
   color: #23d997;
   margin-left: 1rem;
   margin-right: auto;
+  width: 7rem;
 `;
 
 export default NavBar;

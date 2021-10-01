@@ -20,10 +20,15 @@ const Footer = () => {
         <StyledA href="https://github.com/muhannad35990">
           <GitHub style={{ fontSize: "2rem" }} />
         </StyledA>
-
-        <Facebook style={{ fontSize: "2rem" }} />
-        <Instagram style={{ fontSize: "2rem" }} />
-        <Twitter style={{ fontSize: "2rem" }} />
+        <StyledA href="https://www.linkedin.com/in/muhannad-hammada35990">
+          <Facebook style={{ fontSize: "2rem" }} />{" "}
+        </StyledA>
+        <StyledA href="https://www.linkedin.com/in/muhannad-hammada35990">
+          <Instagram style={{ fontSize: "2rem" }} />{" "}
+        </StyledA>
+        <StyledA href="https://www.linkedin.com/in/muhannad-hammada35990">
+          <Twitter style={{ fontSize: "2rem" }} />{" "}
+        </StyledA>
       </IconsSection>
       <Styledfootercontent>
         <Copyright style={{ marginRight: ".5rem" }} />
@@ -63,5 +68,8 @@ const Styledfootercontent = styled.div`
 const StyledA = styled.a`
   text-decoration: none;
   color: white;
+  &:hover {
+    color: #23d997;
+  }
 `;
 export default Footer;

@@ -23,15 +23,7 @@ const Contact = () => {
           <Grid item xs={9}>
             <StyledDetail>Muhannad35990@gmail.com</StyledDetail>
           </Grid>
-          <Grid item xs={3}>
-            <StyledContactItem>
-              <Phone style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
-              Telephone:
-            </StyledContactItem>
-          </Grid>
-          <Grid item xs={9}>
-            <StyledDetail> +963-965442437</StyledDetail>
-          </Grid>
+
           <Grid item xs={3}>
             <StyledContactItem>
               <GitHub style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
@@ -62,6 +54,7 @@ const Contact = () => {
 
 const StyledContantContainer = styled(motion.div)`
   margin-top: 10rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
