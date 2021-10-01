@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import GlobalStyle from "./components/GlobalStyle";
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -12,9 +12,13 @@ import ProjectDetails from "./Pages/ProjectDetails";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AnimatePresence } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
   let location = useLocation();
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <AppContainer>
       <GlobalStyle />
@@ -41,7 +45,7 @@ function App() {
 }
 
 const AppContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

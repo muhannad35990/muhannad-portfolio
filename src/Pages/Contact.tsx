@@ -3,15 +3,11 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import { Email, GitHub, LinkedIn, Phone } from "@material-ui/icons";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { animateSlideUp, pageAnimation } from "../animation";
+
 const Contact = () => {
   return (
-    <StyledContantContainer
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
-    >
+    <StyledContantContainer data-aos="fade-up" data-aos-delay="200">
       <ContactCard>
         <Grid container spacing={5}>
           <Grid item xs={3}>
@@ -52,7 +48,7 @@ const Contact = () => {
   );
 };
 
-const StyledContantContainer = styled(motion.div)`
+const StyledContantContainer = styled.div`
   margin-top: 10rem;
 
   display: flex;

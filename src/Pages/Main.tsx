@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { pageAnimation } from "../animation";
+import { animateSlider, animateSlideright, pageAnimation } from "../animation";
 import Education from "../components/Education";
 import Experiance from "../components/Experiance";
 import Footer from "../components/Footer";
-
+import styled from "styled-components";
 import Header from "../components/Header";
+
 import NavBar from "../components/NavBar";
 import Skills from "../components/Skills";
+import SliderFrames from "../components/SliderFrames";
 const Main = () => {
   return (
     <motion.div
@@ -16,10 +18,13 @@ const Main = () => {
       animate="show"
       exit="exit"
     >
-      <Header />
-      <Education />
-      <Experiance />
-      <Skills />
+      <SliderFrames />
+      <motion.div variants={animateSlideright} initial="hidden" animate="show">
+        <Header />
+        <Education />
+        <Experiance />
+        <Skills />
+      </motion.div>
     </motion.div>
   );
 };

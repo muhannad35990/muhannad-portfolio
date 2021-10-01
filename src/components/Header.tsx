@@ -6,16 +6,19 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   animateFade,
+  animateSlideDown,
   animateSlideLeft,
   animateSlideright,
   animateSlideUp,
   animateZoomOut,
 } from "../animation";
+import LineWave from "./LineWave";
 function Header() {
   return (
     <StyledHeader>
+      <LineWave />
       <StyledHeaderContent>
-        <motion.h2 variants={animateSlideright} initial="hidden" animate="show">
+        <motion.h2 variants={animateSlideDown} initial="hidden" animate="show">
           Hi!
         </motion.h2>
 
@@ -89,6 +92,7 @@ const StyledImage = styled(motion.div)`
   background-position: right;
   background-blend-mode: screen;
   overflow: hidden;
+  z-index: 2;
 `;
 const StyledHeaderContent = styled.div`
   width: 50vw;

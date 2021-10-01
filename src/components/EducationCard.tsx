@@ -6,10 +6,11 @@ interface Iprops {
   degree: string;
   year: number;
   desc: string;
+  id: number;
 }
-const EducationCard: React.FC<Iprops> = ({ degree, year, desc }) => {
+const EducationCard: React.FC<Iprops> = ({ id, degree, year, desc }) => {
   return (
-    <StyledCard>
+    <StyledCard data-aos="fade-up" data-aos-delay={`${id * 200}`}>
       <div>
         <img src={university} alt="aleppo university" />
       </div>

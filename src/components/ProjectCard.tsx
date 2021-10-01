@@ -36,7 +36,7 @@ const ProjectCard: FC<Iprops> = ({
     overflow: hidden;
   `;
   return (
-    <ProjectCardcontainer>
+    <ProjectCardcontainer data-aos="fade-up" data-aos-delay="200">
       <StyledCardPicture></StyledCardPicture>
       <StledProjectCardTitle>
         <span>{title}</span>
@@ -80,7 +80,8 @@ const ProjectCardcontainer = styled.div`
   background-color: #fff;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
   border-radius: 4px;
   transition: all 0.2s ease;
   &:hover {
@@ -101,6 +102,7 @@ const StyledButton = styled.div`
     text-align: center;
     text-decoration: none;
     transition: all 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     &:hover {
       background-color: white;
       border: 1px solid #0a6d4a;

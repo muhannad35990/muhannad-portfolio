@@ -6,8 +6,9 @@ import { projectsData } from "../Data/ProjectsData";
 import * as images from "../components/ImagesImports";
 import { Divider, Grid } from "@material-ui/core";
 import { Box, width } from "@material-ui/system";
-import { pageAnimation } from "../animation";
+import { animateSlideright, pageAnimation } from "../animation";
 import { motion } from "framer-motion";
+import SliderFrames from "../components/SliderFrames";
 
 const ProjectDetails = () => {
   const routeParams = useParams();
@@ -26,103 +27,124 @@ const ProjectDetails = () => {
       animate="show"
       exit="exit"
     >
-      <Slider {...settings}>
-        {projectsData[routeParams.id].images.map((img) => (
-          <div>
-            <StyledSliderImage src={img} />
-          </div>
-        ))}
-      </Slider>
-      <StyledSection>
-        <Divider
-          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
-        >
-          <h1>Features</h1>
-        </Divider>
-        {projectsData[routeParams.id].features.map((feature) => (
-          <StyledFeature>{feature}</StyledFeature>
-        ))}
-      </StyledSection>
-      <StyledSection style={{ backgroundColor: "#fff" }}>
-        <Divider
-          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
-        >
-          <h1> Tools</h1>
-        </Divider>
-        <Grid
-          container
-          spacing={4}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "2rem 5rem",
-          }}
-        >
-          {projectsData[routeParams.id].tools.map((tool, index) => (
-            <Grid item xs={2}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <img
-                  src={projectsData[routeParams.id].icons[index]}
-                  alt="logo"
-                  style={{ width: "50px", height: "40px" }}
-                />
-
-                <h4 style={{ marginTop: ".5rem", color: "#777" }}>{tool}</h4>
-              </div>
-            </Grid>
+      <SliderFrames />
+      <motion.div variants={animateSlideright} initial="hidden" animate="show">
+        <Slider {...settings}>
+          {projectsData[routeParams.id].images.map((img) => (
+            <div>
+              <StyledSliderImage src={img} />
+            </div>
           ))}
-        </Grid>
-      </StyledSection>
-      {projectsData[routeParams.id].youtube && (
+        </Slider>
         <StyledSection>
           <Divider
             style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
           >
-            <h1> Demo Video</h1>
+            <h1>Features</h1>
           </Divider>
-
-          <iframe
-            style={{ width: "800px", height: "500px" }}
-            src={projectsData[routeParams.id].youtube}
-            allow="autoplay; encrypted-media"
-            title={projectsData[routeParams.id].title}
-            allowFullScreen
-          />
+          {projectsData[routeParams.id].features.map((feature) => (
+            <StyledFeature data-aos="fade-up" data-aos-delay="200">
+              {feature}
+            </StyledFeature>
+          ))}
         </StyledSection>
-      )}
-      <StyledSection>
-        <Divider
-          style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
-        >
-          <h1>Links</h1>
-        </Divider>
-        <div style={{ display: "flex" }}>
-          <StyledSourceLink href={projectsData[routeParams.id].source}>
-            <img
-              src={images.githubImg}
-              alt="logo"
-              style={{ width: "9rem", height: "5rem", marginBottom: "1rem" }}
+        <StyledSection style={{ backgroundColor: "#fff" }}>
+          <Divider
+            style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+          >
+            <h1> Tools</h1>
+          </Divider>
+          <Grid
+            container
+            spacing={4}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "2rem 5rem",
+            }}
+          >
+            {projectsData[routeParams.id].tools.map((tool, index) => (
+              <Grid item xs={2}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
+                  <img
+                    src={projectsData[routeParams.id].icons[index]}
+                    alt="logo"
+                    style={{ width: "50px", height: "40px" }}
+                  />
+
+                  <h4 style={{ marginTop: ".5rem", color: "#777" }}>{tool}</h4>
+                </div>
+              </Grid>
+            ))}
+          </Grid>
+        </StyledSection>
+        {projectsData[routeParams.id].youtube && (
+          <StyledSection>
+            <Divider
+              style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+            >
+              <h1> Demo Video</h1>
+            </Divider>
+
+            <iframe
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              style={{ width: "800px", height: "500px" }}
+              src={projectsData[routeParams.id].youtube}
+              allow="autoplay; encrypted-media"
+              title={projectsData[routeParams.id].title}
+              allowFullScreen
             />
-            <h5>Source code</h5>
-          </StyledSourceLink>
-          {projectsData[routeParams.id].demo && (
-            <StyledSourceLink href={projectsData[routeParams.id].demo}>
+          </StyledSection>
+        )}
+        <StyledSection>
+          <Divider
+            style={{ width: "100%", height: "100%", marginBottom: "3rem" }}
+          >
+            <h1>Links</h1>
+          </Divider>
+          <div style={{ display: "flex" }}>
+            <StyledSourceLink
+              href={projectsData[routeParams.id].source}
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <img
-                src={projectsData[routeParams.id].image}
+                src={images.githubImg}
                 alt="logo"
                 style={{ width: "9rem", height: "5rem", marginBottom: "1rem" }}
               />
-              <h5>Live Demo</h5>
+              <h5>Source code</h5>
             </StyledSourceLink>
-          )}
-        </div>
-      </StyledSection>
+            {projectsData[routeParams.id].demo && (
+              <StyledSourceLink
+                href={projectsData[routeParams.id].demo}
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <img
+                  src={projectsData[routeParams.id].image}
+                  alt="logo"
+                  style={{
+                    width: "9rem",
+                    height: "5rem",
+                    marginBottom: "1rem",
+                  }}
+                />
+                <h5>Live Demo</h5>
+              </StyledSourceLink>
+            )}
+          </div>
+        </StyledSection>
+      </motion.div>
     </ProjectDetailsContainer>
   );
 };
