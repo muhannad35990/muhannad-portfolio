@@ -84,6 +84,7 @@ const ProjectCardcontainer = styled.div`
   transform-style: preserve-3d;
   border-radius: 4px;
   transition: all 0.2s ease;
+  margin: 0 auto;
   &:hover {
     transform: scale(1.1);
     cursor: pointer;

@@ -74,10 +74,9 @@ const ProjectDetails = () => {
                   data-aos="zoom-in"
                   data-aos-delay="200"
                 >
-                  <img
+                  <StyledSkillImage
                     src={projectsData[routeParams.id].icons[index]}
                     alt="logo"
-                    style={{ width: "50px", height: "40px" }}
                   />
 
                   <h4 style={{ marginTop: ".5rem", color: "#777" }}>{tool}</h4>
@@ -149,6 +148,15 @@ const ProjectDetails = () => {
   );
 };
 
+const StyledSkillImage = styled.img`
+  width: 50px;
+  height: 40px;
+  @media (max-width: 900px) {
+    width: 30px;
+    height: 20px;
+  }
+`;
+
 const StyledSection = styled.section`
   margin-top: 2rem;
   text-align: center;
@@ -178,7 +186,7 @@ const ProjectDetailsContainer = styled(motion.div)`
 const StyledSliderImage = styled.img`
   height: 80vh;
   width: 100%;
-  object-fit: fill;
+  object-fit: contain;
 `;
 const StyledSourceLink = styled.a`
   display: flex;

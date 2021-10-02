@@ -122,7 +122,7 @@ const StyledDesciption = styled.div`
 const ButtonPrimary = styled(motion.button)`
   background-color: #23d997;
   color: white;
-  z-index: 1000;
+
   a {
     text-decoration: none;
     color: white;
@@ -139,7 +139,11 @@ const ButtonSecondary = styled(motion.button)`
   padding: 1rem 2rem;
   margin: 0 1rem;
   color: white;
-  z-index: 1000;
+
+  @media (max-width: 800px) {
+    display: block;
+    margin: 1rem 0;
+  }
   a {
     text-decoration: none;
     color: white;

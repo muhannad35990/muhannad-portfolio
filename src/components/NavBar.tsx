@@ -48,7 +48,7 @@ const Line = styled(motion.div)`
   margin-top: 5px;
 `;
 const Nav = styled.div`
-  height: 4rem;
+  min-height: 7%;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -57,6 +57,10 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #000;
+  @media (max-width: 800px) {
+    display: block;
+    text-align: center;
+  }
 `;
 const StyledUl = styled.ul`
   list-style: none;
@@ -64,7 +68,9 @@ const StyledUl = styled.ul`
   align-content: center;
   margin-right: 1rem;
   color: white;
-
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
   a {
     margin: 0 1rem;
     text-decoration: none;
@@ -76,6 +82,9 @@ const StyledLogo = styled.img`
   margin-left: 1rem;
   margin-right: auto;
   width: 7rem;
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
 `;
 
 export default NavBar;

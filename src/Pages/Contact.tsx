@@ -4,45 +4,60 @@ import { Grid } from "@material-ui/core";
 import { Email, GitHub, LinkedIn, Phone } from "@material-ui/icons";
 import { motion } from "framer-motion";
 import { animateSlideUp, pageAnimation } from "../animation";
+import { createMuiTheme } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
 
 const Contact = () => {
+  const theme = createMuiTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 800,
+        md: 1200,
+        lg: 1400,
+        xl: 2100,
+      },
+    },
+  });
   return (
     <StyledContantContainer data-aos="fade-up" data-aos-delay="200">
       <ContactCard>
-        <Grid container spacing={5}>
-          <Grid item xs={3}>
-            <StyledContactItem>
-              <Email style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
-              E-Mail:
-            </StyledContactItem>
-          </Grid>
-          <Grid item xs={9}>
-            <StyledDetail>Muhannad35990@gmail.com</StyledDetail>
-          </Grid>
+        <ThemeProvider theme={theme}>
+          <Grid container spacing={{ xs: 2, sm: 2, md: 3, lg: 3, xl: 3 }}>
+            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+              <StyledContactItem>
+                <Email style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+                E-Mail:
+              </StyledContactItem>
+            </Grid>
+            <Grid item xs={12} sm={12} md={9} lg={9} xl={9}>
+              <StyledDetail>Muhannad35990@gmail.com</StyledDetail>
+            </Grid>
 
-          <Grid item xs={3}>
-            <StyledContactItem>
-              <GitHub style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
-              Github:
-            </StyledContactItem>
+            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+              <StyledContactItem>
+                <GitHub style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+                Github:
+              </StyledContactItem>
+            </Grid>
+            <Grid item xs={12} sm={12} md={9} lg={9} xl={9}>
+              <a href="https://github.com/muhannad35990">
+                https://github.com/muhannad35990
+              </a>
+            </Grid>
+            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+              <StyledContactItem>
+                <LinkedIn style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
+                LinkedIn:
+              </StyledContactItem>
+            </Grid>
+            <Grid item xs={12} sm={12} md={9} lg={9} xl={9}>
+              <a href=" https://www.linkedin.com/in/muhannad-hammada35990">
+                https://www.linkedin.com/in/muhannad-hammada35990
+              </a>
+            </Grid>
           </Grid>
-          <Grid item xs={9}>
-            <a href="https://github.com/muhannad35990">
-              https://github.com/muhannad35990
-            </a>
-          </Grid>
-          <Grid item xs={3}>
-            <StyledContactItem>
-              <LinkedIn style={{ marginRight: "1rem", color: "#FE8800" }} />{" "}
-              LinkedIn:
-            </StyledContactItem>
-          </Grid>
-          <Grid item xs={9}>
-            <a href=" https://www.linkedin.com/in/muhannad-hammada35990">
-              https://www.linkedin.com/in/muhannad-hammada35990
-            </a>
-          </Grid>
-        </Grid>
+        </ThemeProvider>
       </ContactCard>
     </StyledContantContainer>
   );

@@ -23,7 +23,6 @@ const SkillwithRatingBar: React.FC<skills> = ({ name, rate, img }) => {
 const Skill = styled.div`
   display: flex;
   justify-content: center;
-
   margin: 1rem 0;
 `;
 export default SkillwithRatingBar;
