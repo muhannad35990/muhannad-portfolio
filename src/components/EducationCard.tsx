@@ -12,7 +12,7 @@ const EducationCard: React.FC<Iprops> = ({ id, degree, year, desc }) => {
   return (
     <StyledCard data-aos="fade-up" data-aos-delay={`${id * 200}`}>
       <div>
-        <img src={university} alt="aleppo university" />
+        <StyledLogoImg src={university} alt="aleppo university" />
       </div>
       <CardContent>
         <StyledDegree>{degree}</StyledDegree>
@@ -22,6 +22,12 @@ const EducationCard: React.FC<Iprops> = ({ id, degree, year, desc }) => {
     </StyledCard>
   );
 };
+const StyledLogoImg = styled.img`
+  width: 80%;
+  @media (max-width: 900px) {
+    width: 60%;
+  }
+`;
 const StyledCard = styled.div`
   padding: 4rem 0;
   display: flex;
@@ -31,7 +37,7 @@ const StyledCard = styled.div`
   text-align: center;
   height: 25rem;
   width: 18rem;
-  margin: 0rem 2rem;
+  margin: 2rem 2rem;
   background-color: #fff;
   box-shadow: 2rem 4rem 6rem rgba($color: #000000, $alpha: 0.2);
   border: 1px solid #ccc;

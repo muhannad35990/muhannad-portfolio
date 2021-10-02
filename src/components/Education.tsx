@@ -47,5 +47,8 @@ const TimeLineEducation = styled.div`
   display: flex;
   justify-content: center;
   padding: 5rem;
+  @media (max-width: 800px) {
+    display: block;
+  }
 `;
 export default Education;

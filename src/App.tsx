@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { AnimatePresence } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ScrollTop from "./components/ScrollTop";
 function App() {
   let location = useLocation();
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
   return (
     <AppContainer>
       <GlobalStyle />
+      <ScrollTop />
       <NavBar />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>

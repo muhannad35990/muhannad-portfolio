@@ -5,6 +5,20 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing: border-box;  
 }
+html{
+    @media (max-width:1300px){
+        font-size: 80%;
+    }
+    @media (max-width:1000px){
+        font-size: 60%;
+    }
+    @media (max-width:700px){
+        font-size: 40%;
+    }
+    @media (max-width:500px){
+        font-size: 30%;
+    }
+}
 body{
     background: #eee;
     font-family: 'Inter', sans-serif;

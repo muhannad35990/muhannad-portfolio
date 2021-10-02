@@ -76,6 +76,9 @@ const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 900px) {
+    display: block;
+  }
 `;
 
 const StyledImage = styled(motion.div)`
@@ -95,12 +98,21 @@ const StyledImage = styled(motion.div)`
   background-blend-mode: screen;
   overflow: hidden;
   z-index: 2;
+  @media (max-width: 900px) {
+    width: 100%;
+    height: 50%;
+    background-position: center;
+  }
 `;
 const StyledHeaderContent = styled.div`
   width: 50vw;
   margin-left: 10vw;
   color: white;
   z-index: 2;
+  @media (max-width: 900px) {
+    width: 100vw;
+    padding-top: 15%;
+  }
 `;
 
 const StyledDesciption = styled.div`
