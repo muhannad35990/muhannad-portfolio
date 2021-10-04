@@ -40,12 +40,18 @@ const Tabcontainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 800px) {
+    min-width: 33.33333%;
+  }
 `;
 const Line = styled(motion.div)`
   height: 4px;
   background-color: #fe8800;
   width: 90%;
   margin-top: 5px;
+  @media (max-width: 800px) {
+    height: 2px;
+  }
 `;
 const Nav = styled.div`
   min-height: 7%;
@@ -68,13 +74,15 @@ const StyledUl = styled.ul`
   align-content: center;
   margin-right: 1rem;
   color: white;
-  @media (max-width: 800px) {
-    justify-content: center;
-  }
+
   a {
     margin: 0 1rem;
     text-decoration: none;
     color: white;
+    @media (max-width: 800px) {
+      justify-content: center;
+      font-size: 2rem;
+    }
   }
 `;
 const StyledLogo = styled.img`
