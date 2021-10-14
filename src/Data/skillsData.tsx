@@ -19,6 +19,8 @@ export const skillsData = [
   { name: "Yup", rate: 99, img: images.noLogoImg },
   { name: "Node.js", rate: 90, img: images.nodeImg },
   { name: "REST", rate: 99, img: images.restImg },
+  { name: "Graphql", rate: 99, img: images.graphqlImg },
+  { name: "Apollo", rate: 99, img: images.apolloImg },
   { name: "MongoDB", rate: 95, img: images.mongoImg },
   { name: "SQL", rate: 90, img: images.sqlImg },
   { name: "Git,GitHub", rate: 99, img: images.gitImg },

@@ -1,6 +1,6 @@
 export const ExperianceData = [
   {
-    date: "2020 - present",
+    date: "9/2020 - 10/2021",
     title: "Front-End web Developer",
     company: "SALVIMAR Gmbh,Germany",
     site: "www.salvimar.de",
@@ -16,10 +16,16 @@ export const ExperianceData = [
     ],
   },
   {
-    date: "2019 - 2020",
-    title: "web Developer",
+    date: "3/2019 - present",
+    title: "MERN stack developer",
     company: "",
     site: "",
-    roles: ["A React.js,node.js developer freelancer"],
+    roles: [
+      "rontend web developer",
+      "React.js developer.",
+      " Backend web developer",
+      "Nodejs developer",
+      "Mern stack developer",
+    ],
   },
 ];

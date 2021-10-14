@@ -23,6 +23,8 @@ import antImg from "../images/skills/ant.png";
 import materialuiImg from "../images/skills/material-ui.svg";
 import tailwindImg from "../images/skills/tailwind.png";
 import restImg from "../images/skills/rest.png";
+import graphqlImg from "../images/skills/graphql.png";
+import apolloImg from "../images/skills/apollo.png";
 import expressImg from "../images/skills/express.svg";
 import socketImg from "../images/skills/socket.svg";
 import axiosImg from "../images/skills/axios.png";
@@ -133,6 +135,8 @@ export {
   materialuiImg,
   tailwindImg,
   restImg,
+  graphqlImg,
+  apolloImg,
   expressImg,
   socketImg,
   axiosImg,
