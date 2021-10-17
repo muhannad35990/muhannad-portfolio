@@ -51,7 +51,7 @@ function Header() {
           initial="hidden"
           animate="show"
         >
-          <a href="./cv/react.js_developer.pdf" download>
+          <a href="./cv/cv_developer_muhannad_hammada.pdf" download>
             Download cv
           </a>
         </ButtonSecondary>
