@@ -1,31 +1,23 @@
 export const ExperianceData = [
   {
-    date: "9/2020 - 10/2021",
+    date: "Sept 2020 - Oct 2021",
     title: "Front-End web Developer",
     company: "SALVIMAR Gmbh,Germany",
     site: "www.salvimar.de",
     roles: [
-      "Frontend web developer using React.js.",
-      "Convert designs / wireframes into responsive reusable components.",
-      "additional libraries such as Redux to manage the web application’s state, and make asynchronous API calls.",
-      "Write clean and maintainable code.",
-      "Fixing bugs of existing applications.",
-      "Adding new features to existing applications.",
-      "Working on Agile environment.",
-      "Collaborate with a team of developers and designers to create a web application.",
+      "Convert designs and wireframes into responsive reusable components therefore producing an efficient and easily testable app with less overall cost",
+      "Used libraries such as Redux to manage the web application’s state, and make asynchronous API calls in order to maintain consistency across client, server, and native environments",
+      " Increased customer satisfaction by collaborating with different teams in an Agile environment to write clean, maintainable, and testable code in addition to fixing bugs and adding new features to existing applications",
     ],
   },
   {
-    date: "3/2019 - present",
+    date: "Mar 2019 - present",
     title: "MERN stack developer",
     company: "",
     site: "",
     roles: [
-      "rontend web developer",
-      "React.js developer.",
-      " Backend web developer",
-      "Nodejs developer",
-      "Mern stack developer",
+      "Developing applications following a 3-tier architecture (Frontend, Backend, Database) using Javascript and JSON",
+      " Making use of React.js for Frontend, Node.js as a server-side framework, and MongoDB as the document database",
     ],
   },
 ];
