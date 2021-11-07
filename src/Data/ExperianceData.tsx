@@ -1,5 +1,16 @@
 export const ExperianceData = [
   {
+    date: "Nov 2021 - present",
+    title: "Front-End web Developer",
+    company: "Cloud systems SARL",
+    site: "www.cloudsystems.tech",
+    roles: [
+      "Convert designs and wireframes into responsive reusable components and pages",
+      "Using NextJs as framework and making asynchronous API calls in order to maintain consistency across client, server, and native environments",
+      "Making maintainable and testable code in addition to fixing bugs and adding new features to existing applications",
+    ],
+  },
+  {
     date: "Sept 2020 - Oct 2021",
     title: "Front-End web Developer",
     company: "SALVIMAR Gmbh,Germany",

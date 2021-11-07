@@ -1,6 +1,7 @@
-import React from "react";
 import htmlimg from "../images/skills/html.png";
 import reactImg from "../images/skills/react.png";
+import nextImg from "../images/skills/next.png";
+
 import cssimg from "../images/skills/css.png";
 import sassImg from "../images/skills/sass.png";
 import bootstrapImg from "../images/skills/bootstrap-4.svg";
@@ -113,6 +114,7 @@ import Portfolio12 from "../images/portfolio/12.jpg";
 export {
   htmlimg,
   reactImg,
+  nextImg,
   cssimg,
   sassImg,
   bootstrapImg,

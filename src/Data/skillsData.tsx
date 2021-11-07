@@ -12,6 +12,7 @@ export const skillsData = [
   { name: "JAVASCRIPT", rate: 99, img: images.javascriptImg },
   { name: "TypeScript", rate: 99, img: images.typescriptImg },
   { name: "React.js", rate: 99, img: images.reactImg },
+  { name: "Next.js", rate: 99, img: images.nextImg },
   { name: "Redux", rate: 99, img: images.reduxImg },
   { name: "redux-saga", rate: 99, img: images.reduxsagaImg },
   { name: "Styled components", rate: 99, img: images.styledComponentsImg },
