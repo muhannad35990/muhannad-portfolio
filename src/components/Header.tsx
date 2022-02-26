@@ -27,7 +27,7 @@ function Header() {
         </motion.h2>
 
         <motion.h3 variants={animateSlideright} initial="hidden" animate="show">
-          Mid-level Web Developer
+          Senior Software Engineer
         </motion.h3>
 
         <StyledDesciption>
