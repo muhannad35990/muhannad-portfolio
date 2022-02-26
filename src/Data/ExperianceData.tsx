@@ -1,7 +1,7 @@
 export const ExperianceData = [
   {
     date: "Feb 2022 - present",
-    title: "Front-End web Developer",
+    title: "Front-End web Developer (Part time)",
     company: "Pickuppb",
     site: "https://pickuppb.com/",
     roles: [
