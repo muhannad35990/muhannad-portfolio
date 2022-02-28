@@ -5,9 +5,8 @@ export const ExperianceData = [
     company: "Pickuppb",
     site: "https://pickuppb.com/",
     roles: [
-      "Pickuupb is a new game in USA we working on site to handle matches and players and Convert designs and wireframes into responsive reusable components and pages",
-      "Using ReactJs and other frontend technologies.",
-      "Making maintainable and testable code in addition to fixing bugs and adding new features to existing applications",
+      "Pickuupb is a social network for a new game in USA where players can communicate and arrange a match and record the results.",
+      "Converting designs and wireframes into responsive reusable components and pages Using ReactJs",
     ],
   },
   {
