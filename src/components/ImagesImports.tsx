@@ -119,7 +119,7 @@ import acquire5 from "../images/acquire/5.png"
 import acquire6 from "../images/acquire/6.png"
 import acquire7 from "../images/acquire/7.png"
 
-import web3 from "../images/acquire/web3.png"
+import web3 from "../images/skills/web3.png"
 
 import spobis1 from "../images/spobis/1.png"
 import spobis2 from "../images/spobis/2.png"
