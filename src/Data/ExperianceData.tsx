@@ -1,15 +1,5 @@
 export const ExperianceData = [
   {
-    date: "Sep 2022 - present",
-    title: "Senior Frontend Web Developer",
-    company: "IOTIVATA/ Reinstil GmbH & Co. KG",
-    site: "https://www.iotivata.com/",
-    roles: [
-      "Convert designs and wireframes into responsive reusable components and pages",
-      "Using NextJs ,ReactJs and making asynchronous API calls in order to maintain consistency across client, server, and native environments maintainable and testable code in addition to fixing bugs and adding new features to existing applications."
-    ]
-  },
-  {
     date: "Aug 2022 - present",
     title: "Senior Frontend Web Developer (Part time)",
     company: "Acquire.Fi",
@@ -19,6 +9,17 @@ export const ExperianceData = [
       "Using NextJs to build the frontend and link to the smart contracts related to the investment process and to the backend with the dashboard, marketplace and pools."
     ]
   },
+  {
+    date: "Sep 2022 - Mar 2023",
+    title: "Senior Frontend Web Developer",
+    company: "IOTIVATA/ Reinstil GmbH & Co. KG",
+    site: "https://www.iotivata.com/",
+    roles: [
+      "Convert designs and wireframes into responsive reusable components and pages",
+      "Using NextJs ,ReactJs and making asynchronous API calls in order to maintain consistency across client, server, and native environments maintainable and testable code in addition to fixing bugs and adding new features to existing applications."
+    ]
+  },
+
   {
     date: "Feb 2022 - Apr 2022",
     title: "Front-End web Developer (Part time)",
