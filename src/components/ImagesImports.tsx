@@ -153,6 +153,29 @@ import champs1 from "../images/champs/1.png"
 import champs2 from "../images/champs/2.png"
 import champs3 from "../images/champs/3.png"
 
+import kidlingTeacher1 from "../images/kidling-teacher/1.png"
+import kidlingTeacher2 from "../images/kidling-teacher/2.png"
+import kidlingTeacher3 from "../images/kidling-teacher/3.png"
+import kidlingTeacher4 from "../images/kidling-teacher/4.png"
+import kidlingTeacher5 from "../images/kidling-teacher/5.png"
+import kidlingTeacher6 from "../images/kidling-teacher/6.png"
+import kidlingTeacher7 from "../images/kidling-teacher/7.png"
+import kidlingTeacher8 from "../images/kidling-teacher/8.png"
+import kidlingTeacher9 from "../images/kidling-teacher/9.png"
+import kidlingTeacher10 from "../images/kidling-teacher/10.png"
+import kidlingTeacher11 from "../images/kidling-teacher/11.png"
+import kidlingTeacher12 from "../images/kidling-teacher/12.png"
+
+import kidlingParent1 from "../images/kidling-parent/1.png"
+import kidlingParent2 from "../images/kidling-parent/2.png"
+import kidlingParent3 from "../images/kidling-parent/3.png"
+import kidlingParent4 from "../images/kidling-parent/4.png"
+import kidlingParent5 from "../images/kidling-parent/5.png"
+import kidlingParent6 from "../images/kidling-parent/6.png"
+import kidlingParent7 from "../images/kidling-parent/7.png"
+import kidlingParent8 from "../images/kidling-parent/8.png"
+import kidlingParent9 from "../images/kidling-parent/9.png"
+
 export {
   htmlimg,
   reactImg,
@@ -288,5 +311,26 @@ export {
   champs1,
   champs2,
   champs3,
-  web3
+  web3,
+  kidlingTeacher1,
+  kidlingTeacher2,
+  kidlingTeacher3,
+  kidlingTeacher4,
+  kidlingTeacher5,
+  kidlingTeacher6,
+  kidlingTeacher7,
+  kidlingTeacher8,
+  kidlingTeacher9,
+  kidlingTeacher10,
+  kidlingTeacher11,
+  kidlingTeacher12,
+  kidlingParent1,
+  kidlingParent2,
+  kidlingParent3,
+  kidlingParent4,
+  kidlingParent5,
+  kidlingParent6,
+  kidlingParent7,
+  kidlingParent8,
+  kidlingParent9
 }

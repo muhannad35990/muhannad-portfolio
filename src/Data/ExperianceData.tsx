@@ -1,6 +1,17 @@
 export const ExperianceData = [
   {
-    date: "Aug 2022 - present",
+    date: "Mar 2023 - present",
+    title: "Senior Frontend Web Developer",
+    company: "Quintic GmbH",
+    site: "https://quintic.de",
+    roles: [
+      "Working on the frontend part of Kidling apps , kidling are group of apps to manage kids, parent and teacher relation in the kita in Germany",
+      "Convert designs and wireframes into responsive reusable components and pages",
+      "Link the frontend to the backend Increase customer satisfaction by collaborating in an Agile environment"
+    ]
+  },
+  {
+    date: "Aug 2022 - Jun 2023",
     title: "Senior Frontend Web Developer (Part time)",
     company: "Acquire.Fi",
     site: "acquire.fi",

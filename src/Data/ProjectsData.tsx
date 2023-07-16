@@ -8,6 +8,98 @@ enum ProjectType {
 export const projectsData = [
   {
     id: 0,
+    image: images.kidlingTeacher2,
+    title: "Kidling teacher app",
+    desc: "An app for the kita teacher to manage the children",
+    type: ProjectType.FrontEnd,
+    tools: [
+      "ReactJs",
+      "Bootstrap",
+      "Axios",
+      "Formik",
+      "Yup",
+      "Eslint",
+      "Atomic design"
+    ],
+    icons: [
+      images.reactImg,
+      images.bootstrapImg,
+      images.axiosImg,
+      images.formikImg,
+      images.noLogoImg,
+      images.eslintImg
+    ],
+    images: [
+      images.kidlingTeacher1,
+      images.kidlingTeacher2,
+      images.kidlingTeacher3,
+      images.kidlingTeacher4,
+      images.kidlingTeacher5,
+      images.kidlingTeacher6,
+      images.kidlingTeacher7,
+      images.kidlingTeacher8,
+      images.kidlingTeacher9,
+      images.kidlingTeacher10,
+      images.kidlingTeacher11,
+      images.kidlingTeacher12
+    ],
+    features: [
+      "WPA app",
+      "An app for a kita teacher to manage his/her kids",
+      "Hr section",
+      "Dashboard for managment",
+      "Allow the teacher to make bulk actions",
+      "Alot of other features"
+    ],
+
+    demo: "https://app.kidling.digital"
+  },
+  {
+    id: 1,
+    image: images.kidlingParent2,
+    title: "Kidling Parent app",
+    desc: "An app for the kita Parents to see all the activities and other stuff about their kids in kia",
+    type: ProjectType.FrontEnd,
+    tools: [
+      "ReactJs",
+      "Bootstrap",
+      "Axios",
+      "Formik",
+      "Yup",
+      "Eslint",
+      "Atomic design"
+    ],
+    icons: [
+      images.reactImg,
+      images.bootstrapImg,
+      images.axiosImg,
+      images.formikImg,
+      images.noLogoImg,
+      images.eslintImg
+    ],
+    images: [
+      images.kidlingParent1,
+      images.kidlingParent2,
+      images.kidlingParent3,
+      images.kidlingParent4,
+      images.kidlingParent5,
+      images.kidlingParent6,
+      images.kidlingParent7,
+      images.kidlingParent8,
+      images.kidlingParent9
+    ],
+    features: [
+      "WPA app",
+      "An app for a kita Parent to keep trak of their kids and see activities and other stuff",
+      "Hr section",
+      "Dashboard for managment",
+      "Alot of other features"
+    ],
+
+    demo: "https://eltern.kidling.digital"
+  },
+  {
+    id: 2,
     image: images.acquire1,
     title: "Acquire.fi",
     desc: "The first online marketplace dedicated solely to cryptocurrency businesses",
@@ -61,7 +153,7 @@ export const projectsData = [
     demo: "https://app.acquire.fi"
   },
   {
-    id: 1,
+    id: 3,
     image: images.spobis1,
     title: "Home of Sports Business",
     desc: "SPOBIS is Europe's largest sports business event.",
@@ -110,7 +202,7 @@ export const projectsData = [
     demo: "https://spobis.com"
   },
   {
-    id: 2,
+    id: 4,
     image: images.astroverse1,
     title: "Astroverse",
     desc: "Astroverse is a Metaverse solutions company. ",
@@ -149,7 +241,7 @@ export const projectsData = [
     demo: "https://astroverse.solutions/"
   },
   {
-    id: 3,
+    id: 5,
     image: images.lebanonِِِِAgriculture1,
     title: "Lebanon agriculture ministry",
     desc: "The electronic platform for food safety Norms and requirements",
@@ -199,7 +291,7 @@ export const projectsData = [
     demo: "https://regulations.agriculture.gov.lb"
   },
   {
-    id: 4,
+    id: 6,
     image: images.erp1,
     title: "ERP System",
     desc: "Full multi tanet ERP system ",
@@ -247,7 +339,7 @@ export const projectsData = [
     demo: "https://erp.cloudsystems.tech"
   },
   {
-    id: 5,
+    id: 7,
     image: images.chaalan1,
     title: "Chaalan plast",
     desc: "The electronic platform for food safety Norms and requirements",
@@ -289,7 +381,7 @@ export const projectsData = [
     demo: "https://chaalanplast.com/"
   },
   {
-    id: 6,
+    id: 8,
     image: images.champs1,
     title: "Champs UAE",
     desc: "Sports club",
@@ -331,7 +423,7 @@ export const projectsData = [
     demo: "https://champs-sportsclub.com/"
   },
   {
-    id: 7,
+    id: 9,
     image: images.yutopia1,
     title: "yutopia care",
     desc: "Centre of advanced medicine awaits you. Integrating the world's best labs with customized, elite treatments, Yutopia can transform your health to that of a superhuman.",
@@ -344,7 +436,7 @@ export const projectsData = [
     demo: "https://www.yutopia.care/"
   },
   {
-    id: 8,
+    id: 10,
     image: images.NaturalFrontImg,
     title: "Natural Tours ",
     desc: "The Front End part of Booking Tours online project.",
@@ -414,7 +506,7 @@ export const projectsData = [
     source: "https://github.com/muhannad35990/NatureTours-React.JS"
   },
   {
-    id: 9,
+    id: 11,
     image: images.NaturalBackImg,
     title: "Natural Tours ",
     desc: "The Back End part of Booking Tours online project.",
@@ -461,7 +553,7 @@ export const projectsData = [
     source: "https://github.com/muhannad35990/NatureToursAPI"
   },
   {
-    id: 10,
+    id: 12,
     image: images.realEstateImg,
     title: "Real estate site",
     desc: "This is a landing page for real-estate and realtors.",
@@ -491,7 +583,7 @@ export const projectsData = [
     demo: "https://competent-knuth-1aab9a.netlify.app/"
   },
   {
-    id: 11,
+    id: 13,
     image: images.touristsImg,
     title: "Tourists site",
     desc: "This is a landing page for tours and Tourists. ",
@@ -523,7 +615,7 @@ export const projectsData = [
     demo: "https://silly-jones-4fbb74.netlify.app/"
   },
   {
-    id: 12,
+    id: 14,
     image: images.hotelsImg,
     title: "Hotels booking",
     desc: "This is a landing page for hotels booking.",
@@ -546,7 +638,7 @@ export const projectsData = [
     demo: "https://gallant-heisenberg-00eac7.netlify.app/"
   },
   {
-    id: 13,
+    id: 15,
     image: images.whatsappImg,
     title: "Whatsapp web clone",
     desc: "This is a Clone of whatsapp web application. ",
@@ -569,7 +661,7 @@ export const projectsData = [
     demo: "https://whatsappweb-clone-6b5b8.web.app/"
   },
   {
-    id: 14,
+    id: 16,
     image: images.videochatImg,
     title: "Video audio chat",
     desc: "This is a video audioweb chat application.",
@@ -586,7 +678,7 @@ export const projectsData = [
     demo: "https://meeting-video-chat.herokuapp.com/"
   },
   {
-    id: 15,
+    id: 17,
     image: images.chatImg,
     title: "chat Application",
     desc: "This is a full stack local messenger using local storage.",
@@ -618,7 +710,7 @@ export const projectsData = [
     source: "https://github.com/muhannad35990/Messenger_FullStack"
   },
   {
-    id: 16,
+    id: 18,
     image: images.muhannadImg,
     title: "Muhannad portfolio",
     desc: "This project of my protfolio",
